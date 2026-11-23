@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Portfolio de Stéphane Renault, Administrateur Réseau et Sécurité et Développeur Web." />
+		<link rel="stylesheet" href="style.css" />
+		<title>Stéphane Renault - Portfolio Administrateur Réseau et Sécurité</title>
+	</head>
+	<body>
+		<nav>
+			<div class="profile">
+				<img src="images/profile.jpg" alt="Photo de Stéphane Renault" />
+				<h1>Stéphane Renault</h1>
+			</div>
+			<ul>
+				<li><a href="images/CV ADMINISTRATEUR RESEAU ET SECURITE.pdf">Mon CV</a></li>
+				<li><a href="https://github.com/strenault?tab=repositories">Mon GitHub</a></li>
+			</ul>
+		</nav>
+
+		<section class="page-content">
+			<header>
+				<h1>Hey, je suis Administrateur Réseau et Sécurité</h1>
+				<p>Je vous présente mes projets.</p>
+				<div>
+					<a href="#adresses">
+						<button type="button">Dites Hey</button>
+					</a>
+				</div>
+			</header>
+
+			<section class="presentation-image">
+				<img class="image1 up up--15" src="images/main-image.jpg" alt="Réseau informatique" />
+			</section>
+
+			<section class="projects-section1">
+				<h2 id="outils-parc">Outils développés — Maintenance de parc (PowerShell)</h2>
+				<div class="projects1">
+					<div class="project1 up up--1">
+						<h3>StressTest_PC — stress matériel et compatibilité Windows 11</h3>
+						<a href="captures/stresstest_rapport.png">
+							<p class="description">
+								Outil de stress CPU / RAM / disque / GPU avec détection automatique du type de
+								machine (mini-PC, tout-en-un, fixe, portable), scores sur 100, détection des
+								goulots d'étranglement et usure de la batterie.
+								Génère un rapport HTML / CSV / JSON nominatif par poste et une aide à la
+								décision de compatibilité Windows 11.
+								Fonctionne depuis une clé USB, sans droits administrateur.
+								PowerShell · CIM/WMI · jobs parallèles · runspaces — v4.4 — 2026
+							</p>
+							<p class="dates">2026</p>
+						</a>
+					</div>
+					<div class="project1 up up--2">
+						<h3>Get-Diagnostic — diagnostic et dépannage N1/N2</h3>
+						<a href="captures/getdiagnostic_rapport.png">
+							<p class="description">
+								Diagnostic complet des postes Windows : disques (SMART), services critiques,
+								réseau et proxy, temps de démarrage, mises à jour en environnement géré
+								(WSUS / Intune / GPO), BitLocker, journaux d'erreurs.
+								Mode réparation assistée avec point de restauration et rapport HTML
+								hiérarchisé (critique / attention / OK).
+								PowerShell 5.1 · CIM · journaux d'événements · registre — v2.3 — 2026
+							</p>
+							<p class="dates">2026</p>
+						</a>
+					</div>
+					<div class="project1 up up--3">
+						<h3>Diag_PC — plateforme modulaire de diagnostic de parc</h3>
+						<a href="captures/diagpc_rapport.png">
+							<p class="description">
+								Orchestrateur pilotant 3 modules PowerShell : identification des postes
+								(fabricant, modèle, série, type avec score de confiance et confirmation guidée),
+								tests selon le type de machine (écran, clavier, webcam, tactile, batterie),
+								contrôle des applications et de la sécurité, puis rapport HTML A4 nominatif
+								et historique CSV consolidé du parc.
+								PowerShell · modules .psm1 · WinForms · historisation CSV — v2.0 — 2026
+							</p>
+							<p class="dates">2026</p>
+						</a>
+					</div>
+					<div class="project1 up up--4">
+						<h3>Rch Pilote — mise à jour sélective des pilotes</h3>
+						<a href="extraits/rch_pilote_selectif.ps1">
+							<p class="description">
+								Mise à jour sélective des pilotes depuis un partage réseau : mappe le partage,
+								propose le dossier par modèle de machine, compare les pilotes déjà publiés
+								(pnputil /enum-drivers) avec les .inf du dossier et n'installe que les
+								pilotes manquants. Récapitulatif et proposition de redémarrage.
+								PowerShell · pnputil · WinForms — v3.0 — 2026
+							</p>
+							<p class="dates">2026</p>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="projects-section1">
+				<h2 id="projets-reseau">Projets réalisés Administrateur Réseau &amp; Sécurité</h2>
+				<div class="projects1">
+					<div class="project1 up up--7">
+						<h3>Assemblage et intégration</h3>
+						<a href="images/Renault_Stéphane_2_Schéma_122022.pdf">
+							<p class="description">
+								Montage PC sur mesure
+								Installation OS Windows
+								Installation de logiciels
+								Mise en service des équipements sur site
+							</p>
+							<p class="dates">Janvier 2023</p>
+						</a>
+					</div>
+					<div class="project1 up up--8">
+						<h3>Installation et configuration du réseau d'une PME</h3>
+						<a href="images/Renault_Stéphane_6_Documentation_022023.pdf">
+							<p class="description">
+								Câblage et configuration des équipements réseau de la PME.
+							</p>
+							<p class="dates">Février 2023</p>
+						</a>
+					</div>
+					<div class="project1 up up--9">
+						<h3>Support aux utilisateurs</h3>
+						<a href="images/Renault_Stéphane_1_copie_ecran_032023.pdf">
+							<p class="description">
+								Technicien Helpdesk : assistance et résolution des incidents.
+							</p>
+							<p class="dates">Février 2023</p>
+						</a>
+					</div>
+					<div class="project1 up up--10">
+						<h3>Déploiement du parc informatique d'une start-up</h3>
+						<a href="images/Renault_Stéphane_1_Procedure_052023.pdf">
+							<p class="description">
+								Procédure pas à pas de déploiement d'un nouveau poste via le réseau,
+								clients présents dans l'unité d'organisation "Computers" de l'AD.
+								Capture d'écran de l'utilitaire PuTTY montrant la connexion à la machine Ubuntu.
+							</p>
+							<p class="dates">Mars 2023</p>
+						</a>
+					</div>
+					<div class="project1 up up--11">
+						<h3>Administrateur Réseaux et Sécurité</h3>
+						<a href="images/INETUM PROGRAMME_ADMIN_RESEAUX_SECURITE.pdf">
+							<p class="description">
+								Programme de formation.
+							</p>
+							<p class="dates">Juin 2023</p>
+						</a>
+					</div>
+					<div class="project1 up up--12">
+						<h3>Linux Fondamentaux</h3>
+						<a href="images/Linux Fondamentaux.pdf">
+							<p class="description">
+								Suivi apprenant.
+							</p>
+							<p class="dates">Juin 2023</p>
+						</a>
+					</div>
+					<div class="project1 up up--13">
+						<h3>Réseaux et TCP/IP</h3>
+						<a href="images/Fond. Réseaux et TCP-IP.pdf">
+							<p class="description">
+								Suivi apprenant.
+							</p>
+							<p class="dates">Juin 2023</p>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="projects-section2">
+				<h2 id="projets-securite">Certifications et suivi de formation</h2>
+				<div class="projects2">
+					<div class="project2 up up--14">
+						<h3>Fondamentaux de la sécurité</h3>
+						<a href="images/Fondament de la sécurité des réseaux.pdf">
+							<p class="description">
+								Suivi apprenant.
+							</p>
+							<p class="dates">Juillet 2023</p>
+						</a>
+					</div>
+					<div class="project2 up up--15">
+						<h3>Firewalling</h3>
+						<a href="images/Firewalling1.pdf">
+							<p class="description">
+								Suivi apprenant Firewalling.
+							</p>
+							<p class="dates">Juillet 2023</p>
+						</a>
+					</div>
+					<div class="project2 up up--17">
+						<h3>Sécurité infrastructure</h3>
+						<a href="images/Sécurité infrastructure -part2.pdf">
+							<p class="description">
+								Suivi apprenant.
+							</p>
+							<p class="dates">Août 2023</p>
+						</a>
+					</div>
+					<div class="project2 up up--18">
+						<h3>Sécurité infra validation</h3>
+						<a href="images/Sécurité infra -validation.pdf">
+							<p class="description">
+								Suivi apprenant.
+							</p>
+							<p class="dates">Août 2023</p>
+						</a>
+					</div>
+					<div class="project2 up up--19">
+						<h3>Cisco Entreprise</h3>
+						<a href="images/Cisco Entreprise.pdf">
+							<p class="description">
+								Suivi apprenant.
+							</p>
+							<p class="dates">Août 2023</p>
+						</a>
+					</div>
+					<div class="project2 up up--20">
+						<h3>Windows Server</h3>
+						<a href="images/Windows server 2019-2022.pdf">
+							<p class="description">
+								Suivi apprenant.
+							</p>
+							<p class="dates">Septembre 2023</p>
+						</a>
+					</div>
+					<div class="project2 up up--21">
+						<h3>Soft skills</h3>
+						<a href="images/Sofskills.pdf">
+							<p class="description">
+								Suivi apprenant.
+							</p>
+							<p class="dates">Septembre 2023</p>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="projects-section">
+				<h2 id="projets-web">Projets réalisés Développeur Web</h2>
+				<div class="projects">
+					<div class="project up up--1">
+						<h3>BOOKI</h3>
+						<a href="images/booki.png">
+							<p class="description">
+								Réalisation frontend du site.
+								HTML5, CSS3, responsive.
+							</p>
+							<p class="dates">Mars 2022</p>
+						</a>
+					</div>
+					<div class="project up up--2">
+						<h3>OH MY FOOD</h3>
+						<a href="images/ohmyfood.png">
+							<p class="description">
+								Intégration d'animations CSS.
+								Sass · Animations CSS · Intégration · Responsive · HTML5.
+							</p>
+							<p class="dates">Avril 2022</p>
+						</a>
+					</div>
+					<div class="project up up--3">
+						<h3>LA PANTHÈRE</h3>
+						<a href="images/Rapport d'optimisation La Panthère.pdf">
+							<p class="description">
+								Optimisation des processus · Optimisation pour les moteurs de recherche (SEO).
+							</p>
+							<p class="dates">Mai 2022</p>
+						</a>
+					</div>
+					<div class="project up up--4">
+						<h3>KANAP</h3>
+						<a href="images/Kanap.png">
+							<p class="description">
+								Développement d'une application de vente de canapés en JavaScript,
+								en respectant les règles de sécurité.
+							</p>
+							<p class="dates">Juin 2022</p>
+						</a>
+					</div>
+					<div class="project up up--5">
+						<h3>PIQUANTE</h3>
+						<a href="https://github.com/strenault/piq">
+							<p class="description">
+								Développement d'un back-end : routes · middleware · JavaScript · MongoDB · OWASP.
+							</p>
+							<p class="dates">Juillet 2022</p>
+						</a>
+					</div>
+					<div class="project up up--6">
+						<h3>GROUPOMANIA</h3>
+						<a href="images/groupomania.png">
+							<p class="description">
+								Développement d'un site (back-end et front-end) en JavaScript,
+								avec une base de données relationnelle et le framework React.
+								SQL · PhpMyAdmin · JavaScript · OWASP.
+							</p>
+							<p class="dates">Août 2022</p>
+						</a>
+					</div>
+				</div>
+			</section>
+		</section>
+
+		<footer>
+			<div class="colonne">
+				<h3>Mes services</h3>
+				<p>Administrateur Réseau et Sécurité</p>
+				<p>Développeur Web</p>
+				<p>Outils PowerShell de maintenance de parc</p>
+			</div>
+
+			<div class="colonne">
+				<h3 id="adresses">Mes adresses</h3>
+				<p><a href="mailto:strenault@wanadoo.fr">strenault@wanadoo.fr</a></p>
+				<p><a href="mailto:strenault18@gmail.com">strenault18@gmail.com</a></p>
+			</div>
+		</footer>
+	</body>
+</html>
